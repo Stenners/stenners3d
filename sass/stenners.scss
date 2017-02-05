@@ -1,0 +1,55 @@
+/*!
+ ________  _________  _______   ________   ________   _______   ________  ________
+|\   ____\|\___   ___\\  ___ \ |\   ___  \|\   ___  \|\  ___ \ |\   __  \|\   ____\
+\ \  \___|\|___ \  \_\ \   __/|\ \  \\ \  \ \  \\ \  \ \   __/|\ \  \|\  \ \  \___|_
+ \ \_____  \   \ \  \ \ \  \_|/_\ \  \\ \  \ \  \\ \  \ \  \_|/_\ \   _  _\ \_____  \
+  \|____|\  \   \ \  \ \ \  \_|\ \ \  \\ \  \ \  \\ \  \ \  \_|\ \ \  \\  \\|____|\  \
+    ____\_\  \   \ \__\ \ \_______\ \__\\ \__\ \__\\ \__\ \_______\ \__\\ _\ ____\_\  \
+   |\_________\   \|__|  \|_______|\|__| \|__|\|__| \|__|\|_______|\|__|\|__|\_________\
+   \|_________|                                                             \|_________|
+*/
+@import "mixins/gradients.scss";
+/* Variables */
+body,
+html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	@include linearGradientThree(#6ac397, #00ab98, #016b6b);
+	font-family: Roboto, sans-serif;
+	color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+#world {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: linear-gradient(#e4e0ba, #f7d9aa);
+}
+
+.logo {
+	svg {
+		height: 15rem;
+	}
+}

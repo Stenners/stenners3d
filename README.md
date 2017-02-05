@@ -1,2 +1,2 @@
-# stenners3d
-stenners3D
+# STENNERS3D
+Experimemts with Three.js
