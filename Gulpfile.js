@@ -17,4 +17,4 @@ gulp.task('watch',function() {
     gulp.watch('sass/*.scss',['styles']);
 });
 
-gulp.task('default',['styles', 'webserver', 'watch']);
+gulp.task('default',['watch', 'webserver']);
